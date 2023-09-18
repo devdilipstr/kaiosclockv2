@@ -36,7 +36,7 @@ function Alarm({ children }) {
   const [data,setdata] = useState({})
   const [timeline,settimeline] = useState("")
   
-  getData(setdata,"https://api.npoint.io/7cdea25f07d61d8d3e5d")
+  // getData(setdata,"https://api.npoint.io/7cdea25f07d61d8d3e5d")
 
   if(timeline !=  ""){
     setTimeout(() => {
@@ -76,18 +76,18 @@ function Alarm({ children }) {
     }, 1000);
   }, []);
   var time = `${hourDigital}:${minutesDigital}:${secondDigital} ${amPm}`
-  if (Object.keys(data).includes(time)) {
+  // if (Object.keys(data).includes(time)) {
    
-    if(data[time].split("_")[1] == "s"){
-      ring.play();
-      ring.loop(true);
-    }else{
-      notifi.play();
-      notifi.play();
-    }
-    if(timeline == ""){
-      settimeline(data[time].split("_")[0])
-    }
+  //   if(data[time].split("_")[1] == "s"){
+  //     ring.play();
+  //     ring.loop(true);
+  //   }else{
+  //     notifi.play();
+  //     notifi.play();
+  //   }
+  //   if(timeline == ""){
+  //     settimeline(data[time].split("_")[0])
+  //   }
     
   }
   return (
