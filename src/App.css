@@ -44,8 +44,8 @@
 body {
   margin: 0;
   font-family: var(--body-font);
-  background-color: var(--body-color);
-  color: var(--text-color);
+  background-color: black;
+  color: white;
   transition: 0.4s;
 }
 a {
@@ -62,10 +62,12 @@ a {
 .grid {
   display: grid;
 }
-/* Clock */
 .clock-container {
   height: 100vh;
+  
+  align-items: center;
   grid-template-rows: 1fr max-content;
+  transition: all ease-in-out 1s;
 }
 /* Media Queries */
 /* For large devices */

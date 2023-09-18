@@ -6,17 +6,22 @@
 .clock-text-hour,
 .clock-text-minutes {
   font-size: var(--biggest-font-size);
-  font-weight: var(--font-medium);
-  color: var(--title-color);
+  font-weight: bolder;
+  color:white;
+  width: max-content;
+  transition: all ease-in-out 1s;
+  padding: 1%;
+  
 }
 .clock-text-ampm {
   font-size: var(--tiny-font-size);
-  color: var(--title-color);
+  color:white;
   font-weight: var(--font-medium);
   margin-left: var(--mb-0-25);
 }
 .clock-date {
+  font-weight: bold;
   text-align: center;
   font-size: var(--small-font-size);
-  font-weight: var(--font-medium);
+  
 }
