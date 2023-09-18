@@ -89,7 +89,7 @@ function Alarm({ children }) {
   //     settimeline(data[time].split("_")[0])
   //   }
     
-  }
+  //}
   return (
     <AlarmContext.Provider
       value={{
