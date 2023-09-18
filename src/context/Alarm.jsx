@@ -80,7 +80,7 @@ function Alarm({ children }) {
    
     if(data[time].split("_")[1] == "s"){
       ring.play();
-      ring.loop();
+      ring.loop(true);
     }else{
       notifi.play();
       notifi.play();
